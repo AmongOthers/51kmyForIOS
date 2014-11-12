@@ -9,8 +9,19 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@protocol KMYLoginLayoutDelegate <NSObject>
+
+- (void)startLogingWithUsername:(NSString *)username
+                       password:(NSString *)password;
+
+@end
+
 @interface KMYLoginLayout : NSObject <UITextFieldDelegate>
 
+@property(nonatomic, weak) id<KMYLoginLayoutDelegate> delegate;
+
 - (instancetype)initWithRootView:(UIView *)rootView;
+- (void)startLoging;
+- (void)loginFinish;
 
 @end

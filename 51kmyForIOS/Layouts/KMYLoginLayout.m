@@ -7,6 +7,7 @@
 //
 
 #import "KMYLoginLayout.h"
+#import "MainViewController.h"
 #import <UIView+EasyFrame.h>
 #import <TKRoundedView.h>
 
@@ -126,15 +127,15 @@
   self.passwordField.enabled = NO;
   self.loginBtn.enabled = NO;
   [self.indicator startAnimating];
+  [self.delegate startLogingWithUsername:self.usernameField.text
+                                password:self.passwordField.text];
+}
 
-  // delay 2 seconds
-  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)),
-                 dispatch_get_main_queue(), ^{
-      self.usernameField.enabled = YES;
-      self.passwordField.enabled = YES;
-      self.loginBtn.enabled = YES;
-      [self.indicator stopAnimating];
-  });
+- (void)loginFinish {
+  self.usernameField.enabled = YES;
+  self.passwordField.enabled = YES;
+  self.loginBtn.enabled = YES;
+  [self.indicator stopAnimating];
 }
 
 @end

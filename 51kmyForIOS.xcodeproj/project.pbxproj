@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073843D71A130F36008F45FD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073843D61A130F36008F45FD /* MainViewController.m */; };
 		075337721A1254E700DB8F6F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075337711A1254E700DB8F6F /* LoginViewController.m */; };
 		075337761A12561700DB8F6F /* KMYLoginLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 075337751A12561700DB8F6F /* KMYLoginLayout.m */; };
 		07B1915E1A1254200047CBF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B1915D1A1254200047CBF6 /* main.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		073843D51A130F36008F45FD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		073843D61A130F36008F45FD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		075337701A1254E700DB8F6F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		075337711A1254E700DB8F6F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		075337741A12561700DB8F6F /* KMYLoginLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMYLoginLayout.h; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 			children = (
 				075337701A1254E700DB8F6F /* LoginViewController.h */,
 				075337711A1254E700DB8F6F /* LoginViewController.m */,
+				073843D51A130F36008F45FD /* MainViewController.h */,
+				073843D61A130F36008F45FD /* MainViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				07B191611A1254200047CBF6 /* AppDelegate.m in Sources */,
 				07B1915E1A1254200047CBF6 /* main.m in Sources */,
 				075337721A1254E700DB8F6F /* LoginViewController.m in Sources */,
+				073843D71A130F36008F45FD /* MainViewController.m in Sources */,
 				075337761A12561700DB8F6F /* KMYLoginLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

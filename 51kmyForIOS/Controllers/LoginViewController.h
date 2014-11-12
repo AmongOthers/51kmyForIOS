@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KMYLoginLayout.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController
+    : UIViewController <KMYLoginLayoutDelegate, UIAlertViewDelegate>
 
 @end
