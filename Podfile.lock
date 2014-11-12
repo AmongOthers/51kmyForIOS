@@ -1,0 +1,13 @@
+PODS:
+  - EasyFrame (0.1.2)
+  - TKRoundedView (0.4)
+
+DEPENDENCIES:
+  - EasyFrame (~> 0.1.2)
+  - TKRoundedView (~> 0.4)
+
+SPEC CHECKSUMS:
+  EasyFrame: a5e009f652a38a8d3d2904ea0da5959416c160c2
+  TKRoundedView: fdeca558383ca40438c0f278e310d2d883d6739f
+
+COCOAPODS: 0.34.4
