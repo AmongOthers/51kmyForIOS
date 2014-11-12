@@ -106,6 +106,9 @@
   [loginBtn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
   [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
   [rootView addSubview:loginBtn];
+  [loginBtn addTarget:self
+                action:@selector(startLoging)
+      forControlEvents:UIControlEventTouchUpInside];
   self.loginBtn = loginBtn;
 }
 
